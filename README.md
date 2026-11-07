@@ -1,12 +1,27 @@
-# noly的世界地图 / Noly's World Map
+# noly的文明6 / Noly's Civ6
 
-一个基于 **7676World** 的 Civilization VI TSL 世界地图，调整了太平洋/大西洋宽度，并新增了白令海陆桥、小岛和阿拉斯加；保留 157 个 TSL。
+这是一个 Civilization VI 的 Mod 合集，包含一个 TSL 世界地图和一个中国领袖 mod。
 
-A Civilization VI TSL world map based on **7676World**, with a wider Pacific, a slightly wider Atlantic, and a new Bering land bridge / Alaska / Aleutian islands.
+A small Civilization VI mod collection containing a TSL world map and a Chinese leader mod.
+
+## 包含的 Mod / Included mods
+
+| Mod | 内容 | 作者 |
+|---|---|---|
+| `NolyWorldMap` | 基于 7676World 的 166×82 TSL 世界地图 | noly（基于 7676） |
+| `PhantagonistLiuChe` | 汉武帝刘彻，作为中国的可选领袖 | Phantagonist |
+
+`PhantagonistLiuChe` 是第三方 Steam Workshop mod（Workshop ID 2187130106），本仓库只是个人备份/合集，不代表原作者。
 
 ![preview](preview.png)
 
-## 特点 / Features
+## NolyWorldMap（世界地图）
+
+一个基于 **7676World** 的 Civilization VI TSL 世界地图，调整了太平洋/大西洋宽度，并新增了白令海陆桥、小岛和阿拉斯加。
+
+A Civilization VI TSL world map based on **7676World**, with a wider Pacific, a slightly wider Atlantic, and a new Bering land bridge / Alaska / Aleutian islands.
+
+### 特点 / Features
 
 - 尺寸 **166 × 82**，偶数宽度，横向圆柱环绕。
 - **太平洋显著加宽**：约 23 格（7676 原版约 10 格）。
@@ -41,13 +56,14 @@ A Civilization VI TSL world map based on **7676World**, with a wider Pacific, a 
 ## 依赖 / Requirements
 
 - **Civilization VI**
-- **Gathering Storm**（modinfo 依赖，必须启用）
+- **Gathering Storm**（两个 mod 都需要）
+- **Rise and Fall**（`PhantagonistLiuChe` 需要）
 - 建议安装与 7676 相同的 DLC/文明包，否则部分 TSL 可能无效或不出生。
 
 ## 安装 / Installation
 
-1. 安装 Civ6 和 Gathering Storm。
-2. 将本仓库中的 `NolyWorldMap` 文件夹复制到：
+1. 安装 Civ6、Gathering Storm 和 Rise and Fall。
+2. 将本仓库中的 **两个文件夹** 都复制到：
    ```
    Documents\My Games\Sid Meier's Civilization VI\Mods\
    ```
@@ -56,25 +72,36 @@ A Civilization VI TSL world map based on **7676World**, with a wider Pacific, a 
    Mods\NolyWorldMap\NolyWorldMap.modinfo
    Mods\NolyWorldMap\Maps.xml
    Mods\NolyWorldMap\Maps\NolyWorld.Civ6Map
+
+   Mods\PhantagonistLiuChe\PhantagonistLiuChe.modinfo
+   Mods\PhantagonistLiuChe\...
    ```
-3. 启动游戏，在 Mod 列表中启用 **noly的世界地图**（如果默认未启用）。
-4. **新开一局**，地图类型选择 **「noly的世界地图」**。
+3. 启动游戏，在 Mod 列表中同时启用 **noly的世界地图** 和 **Phantagonist's Liu Che**。
+4. **新开一局**：
+   - 地图类型选择 **「noly的世界地图」**；
+   - 选择中国时，领袖可选 **刘彻（汉武帝）**。
 
 > 旧存档保存的是旧地图数据，不会自动更新；每次更新地图后都必须新开一局。
 
 ## 文件结构 / Repository layout
 
 ```
-noly-world-map/
+noly-civ6/
 ├─ README.md
 ├─ NOTICE.md
 ├─ preview.png
 ├─ .gitignore
-└─ NolyWorldMap/
-   ├─ NolyWorldMap.modinfo
-   ├─ Maps.xml
-   └─ Maps/
-      └─ NolyWorld.Civ6Map
+├─ NolyWorldMap/
+│  ├─ NolyWorldMap.modinfo
+│  ├─ Maps.xml
+│  └─ Maps/
+│     └─ NolyWorld.Civ6Map
+└─ PhantagonistLiuChe/
+   ├─ PhantagonistLiuChe.modinfo
+   ├─ GameData/
+   ├─ Localization/
+   ├─ Textures/
+   └─ ...
 ```
 
 ## 版本 / Version
@@ -84,16 +111,19 @@ noly-world-map/
 - 2026-11-07：白令海 v2：陆桥加丘陵/森林/雪地修饰、绿色区域改为大片浅水、阿拉斯加扩大为 4×3。
 - 2026-11-07：白令海 v3：两岛一上一下、浅水围绕岛屿/踏脚路径、其余恢复深水；阿拉斯加向南延伸 2×2。
 - 2026-11-07：白令海 v4：蓝色岛不动，红色岛向下平移到蓝色岛南侧一格，浅水/深水按新位置重算。
+- 2026-11-07：仓库改名 **noly-civ6**，加入 **Phantagonist's Liu Che（汉武帝）** mod。
 - 基于 7676World 的 TSL 世界地图修改。
 
 ## 致谢 / Credits
 
 - 原版地图：**7676World**，作者 **7676**（Steam Workshop）。
-- 本仓库只包含修改后的 `NolyWorldMap`，**不包含原版 7676World 地图文件**。
-- 修改与调整：noly。
+- 本仓库不包含原版 7676World 地图文件，只包含修改后的 `NolyWorldMap`。
+- **PhantagonistLiuChe**：作者 **Phantagonist**（Steam Workshop ID 2187130106），本仓库只做个人备份/合集。
+- 地图修改与整理：noly。
 
 ## 使用说明 / Notice
 
 - 仅供个人游戏使用。
-- 转载/再分发请保留对 **7676** 和 **noly** 的署名，并遵守原版 7676World 的使用条款。
-- 商业使用或再分发需获得原作者的许可。
+- 转载/再分发请保留对 **7676**、**Phantagonist** 和 **noly** 的署名，并遵守各自原 mod 的使用条款。
+- `PhantagonistLiuChe` 是第三方 mod，版权归 Phantagonist；如果仓库改为公开，请先确认原作者是否允许再分发。
+- 商业使用或再分发需获得原作者许可。

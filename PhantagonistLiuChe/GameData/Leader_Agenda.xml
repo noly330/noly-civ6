@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Define agenda and strategies, InGame -->
+<!-- Requires further testing -->
+<GameData>
+	<TraitModifiers>
+		<Row TraitType="TRAIT_AGENDA_PHANTA_LIU_CHE" ModifierId="AGENDA_PHANTA_LIU_CHE_HAPPY"/>
+		<Row TraitType="TRAIT_AGENDA_PHANTA_LIU_CHE" ModifierId="AGENDA_PHANTA_LIU_CHE_UNHAPPY"/>
+	</TraitModifiers>
+
+	<Modifiers>
+		<Row>
+			<ModifierId>AGENDA_PHANTA_LIU_CHE_HAPPY</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<OwnerRequirementSetId>ON_TURN_STARTED</OwnerRequirementSetId>
+			<SubjectRequirementSetId>PLAYER_CLEARS_BARBARIAN_CAMPS</SubjectRequirementSetId>
+		</Row>
+		<!-- Liu Che's positive agenda uses the same requirement set as Civilized -->
+		<Row>
+			<ModifierId>AGENDA_PHANTA_LIU_CHE_UNHAPPY</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_AGENDA_HORSE_LORD</ModifierType>
+			<OwnerRequirementSetId>ON_TURN_STARTED</OwnerRequirementSetId>
+			<SubjectRequirementSetId>PLAYER_IS_WARMONGER_SUBJECT</SubjectRequirementSetId>
+		</Row>
+		<!-- Liu Che's negative agenda is experimental. It combines Horse Lord with low threshold set to negative, and combines with Peacekeeper's warmonger requirement set. -->
+	</Modifiers>
+
+	<ModifierArguments>
+		<Row>
+			<ModifierId>AGENDA_PHANTA_LIU_CHE_HAPPY</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>10</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_PHANTA_LIU_CHE_HAPPY</ModifierId>
+			<Name>ReductionTurns</Name>
+			<Value>10</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_PHANTA_LIU_CHE_HAPPY</ModifierId>
+			<Name>ReductionValue</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_PHANTA_LIU_CHE_HAPPY</ModifierId>
+			<Name>MessageThrottle</Name>
+			<Value>20</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_PHANTA_LIU_CHE_HAPPY</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_KUDO_LEADER_PHANTA_LIU_CHE_REASON_ANY</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_PHANTA_LIU_CHE_HAPPY</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_DIPLO_KUDO_EXIT_LEADER_PHANTA_LIU_CHE_ANY</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_PHANTA_LIU_CHE_UNHAPPY</ModifierId>
+			<Name>BottomPercentage</Name>
+			<Value>-1</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_PHANTA_LIU_CHE_UNHAPPY</ModifierId>
+			<Name>BottomRankingDiploMod</Name>
+			<Value>0</Value>
+		</Row>
+		<!-- Horse Lord with low threshold set to negative. -->
+		<Row>
+			<ModifierId>AGENDA_PHANTA_LIU_CHE_UNHAPPY</ModifierId>
+			<Name>PromotionClass1</Name>
+			<Value>PROMOTION_CLASS_HEAVY_CAVALRY</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_PHANTA_LIU_CHE_UNHAPPY</ModifierId>
+			<Name>PromotionClass2</Name>
+			<Value>PROMOTION_CLASS_LIGHT_CAVALRY</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_PHANTA_LIU_CHE_UNHAPPY</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>PHANTA_LIU_CHE_WARNING</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_PHANTA_LIU_CHE_UNHAPPY</ModifierId>
+			<Name>TopPercentage</Name>
+			<Value>70</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_PHANTA_LIU_CHE_UNHAPPY</ModifierId>
+			<Name>TopRankingDiploMod</Name>
+			<Value>-6</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_PHANTA_LIU_CHE_UNHAPPY</ModifierId>
+			<Name>MessageThrottle</Name>
+			<Value>20</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_PHANTA_LIU_CHE_UNHAPPY</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_DIPLO_WARNING_EXIT_LEADER_PHANTA_LIU_CHE_ANY</Value>
+		</Row>
+	</ModifierArguments>
+
+	<ModifierStrings>
+		<Row ModifierId="AGENDA_PHANTA_LIU_CHE_HAPPY" Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="AGENDA_PHANTA_LIU_CHE_UNHAPPY" Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+	</ModifierStrings>
+
+	<!-- Set random agendas with same effect or opposite effect (or any agenda considered unsuitable) exclusive. Check the list of all agendas.-->
+	<!-- Liu Che's agenda is exclusive with Barbarian Ally, Civilized, Darwinist, Paranoid, Pillager (just because it opposes Liu Che's anti-barbarians stance) and Standing Army. -->
+
+	<ExclusiveAgendas>
+		<Row AgendaOne="AGENDA_PHANTA_LIU_CHE" AgendaTwo="AGENDA_BARBARIAN_LOVER"/>
+		<Row AgendaOne="AGENDA_PHANTA_LIU_CHE" AgendaTwo="AGENDA_CIVILIZED"/>
+		<Row AgendaOne="AGENDA_PHANTA_LIU_CHE" AgendaTwo="AGENDA_DARWINIST"/>
+		<Row AgendaOne="AGENDA_PHANTA_LIU_CHE" AgendaTwo="AGENDA_PARANOID"/>
+		<Row AgendaOne="AGENDA_PHANTA_LIU_CHE" AgendaTwo="AGENDA_PILLAGER"/>
+		<Row AgendaOne="AGENDA_PHANTA_LIU_CHE" AgendaTwo="AGENDA_STANDING_ARMY"/>
+	</ExclusiveAgendas>
+
+	<!-- Can set higher chance to get particular agendas.-->
+	<!-- Liu Che is more likely to get Explorer and City-State Ally-->
+
+	<AgendaPreferredLeaders>
+		<Row AgendaType="AGENDA_EXPLORER" LeaderType="LEADER_PHANTA_LIU_CHE" PercentageChance="20"/>
+		<Row AgendaType="AGENDA_CITY_STATE_ALLY" LeaderType="LEADER_PHANTA_LIU_CHE" PercentageChance="20"/>
+	</AgendaPreferredLeaders>
+
+	<!-- Set AI specific trait-->
+	
+	<LeaderTraits>
+		<Row LeaderType="LEADER_PHANTA_LIU_CHE" TraitType="TRAIT_LEADER_AGGRESSIVE_MILITARY"/>
+	</LeaderTraits>
+		
+	<!-- Set AI preference-->
+	<!-- Can also add yield and pseudoyield preference, but does not apply this time.-->
+	
+	<AiListTypes>
+		<Row ListType="PhantaLiuCheCivics"/>
+		<Row ListType="PhantaLiuCheDiplomacy"/>
+		<Row ListType="PhantaLiuCheTechs"/>
+		<Row ListType="PhantaLiuCheWonders"/>
+	</AiListTypes>
+	<AiLists>
+		<Row ListType="PhantaLiuCheCivics" LeaderType="TRAIT_LEADER_PHANTA_LIU_CHE" System="Civics"/>
+		<Row ListType="PhantaLiuCheDiplomacy" LeaderType="TRAIT_LEADER_PHANTA_LIU_CHE" System="DiplomaticActions"/>
+		<Row ListType="PhantaLiuCheTechs" LeaderType="TRAIT_LEADER_PHANTA_LIU_CHE" System="Technologies"/>
+		<Row ListType="PhantaLiuCheWonders" LeaderType="TRAIT_LEADER_PHANTA_LIU_CHE" System="Buildings"/>
+	</AiLists>
+	<AiFavoredItems>
+		<Row ListType="PhantaLiuCheCivics" Item="CIVIC_FOREIGN_TRADE" Favored="true"/>
+		<Row ListType="PhantaLiuCheCivics" Item="CIVIC_POLITICAL_PHILOSOPHY" Favored="true"/>
+		<Row ListType="PhantaLiuCheDiplomacy" Item="DIPLOACTION_LIBERATE_CITY" Favored="false"/>
+		<Row ListType="PhantaLiuCheDiplomacy" Item="DIPLOACTION_DECLARE_RECONQUEST_WAR" Favored="true"/>
+		<Row ListType="PhantaLiuCheDiplomacy" Item="DIPLOACTION_DECLARE_PROTECTORATE_WAR" Favored="true"/>
+		<Row ListType="PhantaLiuCheDiplomacy" Item="DIPLOACTION_DECLARE_COLONIAL_WAR" Favored="true"/>
+		<Row ListType="PhantaLiuCheDiplomacy" Item="DIPLOACTION_DECLARE_TERRITORIAL_WAR" Favored="true"/>
+		<Row ListType="PhantaLiuCheTechs" Item="TECH_ANIMAL_HUSBANDRY" Favored="true"/>
+		<Row ListType="PhantaLiuCheTechs" Item="TECH_HORSEBACK_RIDING" Favored="true"/>
+		<Row ListType="PhantaLiuCheTechs" Item="TECH_CURRENCY" Favored="true"/>
+		<Row ListType="PhantaLiuCheTechs" Item="TECH_BANKING" Favored="true"/>
+		<Row ListType="PhantaLiuCheWonders" Item="BUILDING_COLOSSUS" Favored="true"/>
+		<Row ListType="PhantaLiuCheWonders" Item="BUILDING_GREAT_BATH" Favored="false"/>
+		<Row ListType="PhantaLiuCheWonders" Item="BUILDING_GREAT_ZIMBABWE" Favored="true"/>
+		<Row ListType="PhantaLiuCheWonders" Item="BUILDING_FORBIDDEN_CITY" Favored="true"/>
+		<Row ListType="PhantaLiuCheWonders" Item="BUILDING_TERRACOTTA_ARMY" Favored="true"/>
+		<Row ListType="PhantaLiuCheWonders" Item="BUILDING_ALHAMBRA" Favored="true"/>
+		<Row ListType="PhantaLiuCheWonders" Item="BUILDING_BIG_BEN" Favored="true"/>
+		<Row ListType="PhantaLiuCheWonders" Item="BUILDING_POTALA_PALACE" Favored="true"/>
+	</AiFavoredItems>
+	
+</GameData>

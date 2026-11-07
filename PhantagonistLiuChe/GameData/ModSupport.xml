@@ -1,0 +1,9 @@
+<!-- Reserved for mod compatibilities, InGame -->
+<!-- With experimental starting location setting compatible with Yet (not) Another Maps Pack. Let see if this works... -->
+<GameData>
+	<StartPosition>
+		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_CHINA"					X="79" Y="59" Leader="LEADER_PHANTA_LIU_CHE" />
+		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_CHINA"			X="84" Y="50" Leader="LEADER_PHANTA_LIU_CHE" />
+		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_CHINA"			X="105" Y="74" Leader="LEADER_PHANTA_LIU_CHE" />
+	</StartPosition>
+</GameData>

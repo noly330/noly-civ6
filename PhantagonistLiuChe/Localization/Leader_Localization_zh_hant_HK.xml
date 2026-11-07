@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<GameData>
+	<LocalizedText>
+		<Row Tag="LOC_LEADER_PHANTA_LIU_CHE_NAME" Language="zh_Hant_HK">
+			<Text>劉徹</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_PHANTA_LIU_CHE_CITY_00" Language="zh_Hant_HK">
+			<Text>長安</Text>
+		</Row>
+		<Row Tag="LOC_TRAIT_LEADER_PHANTA_LIU_CHE_NAME" Language="zh_Hant_HK">
+			<Text>絲路征途</Text>
+		</Row>
+		<Row Tag="LOC_TRAIT_LEADER_PHANTA_LIU_CHE_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>每一座您控制的原始 [ICON_Capital] 首都提供+1影響力點數。建造遠古和古典奇觀時，可消耗建造者次數來推進10%的奇觀原始建造進程。建造者獲得1個額外次數。陸上單位在祖國領土外作戰時，+5 [ICON_Strength] 戰鬥力。獲得特色單位博望侯。</Text>
+		</Row>
+		<Row Tag="LOC_AGENDA_PHANTA_LIU_CHE_NAME" Language="zh_Hant_HK">
+			<Text>漢匈戰爭</Text>
+		</Row>
+		<Row Tag="LOC_AGENDA_PHANTA_LIU_CHE_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>喜歡清除蠻族哨站所的文明。討厭重視騎兵的好戰者。</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_MODIFIER_PHANTA_LIU_CHE_HAPPY" Language="zh_Hant_HK">
+			<Text>劉徹滿意您清除蠻族哨站所的舉措。</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_KUDO_LEADER_PHANTA_LIU_CHE_REASON_ANY" Language="zh_Hant_HK">
+			<Text>（您清除了蠻族哨站所。）</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_MODIFIER_PHANTA_LIU_CHE_UNHAPPY" Language="zh_Hant_HK">
+			<Text>劉徹不滿您的好戰舉措和騎兵部隊。</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_WARNING_LEADER_PHANTA_LIU_CHE_REASON_ANY" Language="zh_Hant_HK">
+			<Text>（您是重視騎兵的好戰者。）</Text>
+		</Row>
+		<Row Tag="LOC_LOADING_INFO_LEADER_PHANTA_LIU_CHE" Language="zh_Hant_HK">
+			<Text>願您統治千秋萬代，雄才宏略的大漢皇帝。塞外之地蘊藏數之不盡的機遇與威脅，中華人民盼望您以卓見遠識帶領他們。派遣您的使節和商旅，鋪設世所未見的貿易商路網路，並摧毀一切膽敢擋路的愚昧之徒。</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_FIRST_MEET_LEADER_PHANTA_LIU_CHE_ANY" Language="zh_Hant_HK">
+			<Text>朕乃天子，大漢皇帝。報上汝名，述說汝部。太史當記錄之。</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_PHANTA_LIU_CHE_ANY" Language="zh_Hant_HK">
+			<Text>大漢商市歡迎各方來客。汝可到彼一遊。</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_PHANTA_LIU_CHE_ANY" Language="zh_Hant_HK">
+			<Text>善。</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_PHANTA_LIU_CHE_ANY" Language="zh_Hant_HK">
+			<Text>汝可作賦頌未央宮之華美。朕亦當令諸學士作賦記汝之宮廷。</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_GREETING_LEADER_PHANTA_LIU_CHE_HAPPY" Language="zh_Hant_HK">
+			<Text>汝來朝是為何故？為朝貢耶？為商議耶？</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_GREETING_LEADER_PHANTA_LIU_CHE_UNHAPPY" Language="zh_Hant_HK">
+			<Text>汝當慎言</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_PHANTA_LIU_CHE_ANY" Language="zh_Hant_HK">
+			<Text>使團可於槁街擇一邸而居，惟如其餘夷狄一般，務必守大漢禮法。</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_PHANTA_LIU_CHE_ANY" Language="zh_Hant_HK">
+			<Text>槁街無容汝使團之處。</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_PHANTA_LIU_CHE_ANY" Language="zh_Hant_HK">
+			<Text>大漢使團將至汝境。為首者執漢節，並攜漆器、玉器、銅器並上佳絲綢為禮。</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_ACCEPT_OPEN_BORDERS_FROM_HUMAN_LEADER_PHANTA_LIU_CHE_ANY" Language="zh_Hant_HK">
+			<Text>大漢皇帝賜汝人民官傳，可通行中國之境。</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_REJECT_OPEN_BORDERS_FROM_HUMAN_LEADER_PHANTA_LIU_CHE_ANY" Language="zh_Hant_HK">
+			<Text>邊關須嚴，不容通行。</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_OPEN_BORDERS_FROM_AI_LEADER_PHANTA_LIU_CHE_ANY" Language="zh_Hant_HK">
+			<Text>中原百姓于塞外尋機遇。且容朕忠義之士通行汝境。</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_PHANTA_LIU_CHE_ANY" Language="zh_Hant_HK">
+			<Text>汝言正合朕意。</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_PHANTA_LIU_CHE_ANY" Language="zh_Hant_HK">
+			<Text>汝當修遠，方知汝部差大漢幾何。</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_PHANTA_LIU_CHE_ANY" Language="zh_Hant_HK">
+			<Text>汝部可自稱為大漢之友，何如？</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_PHANTA_LIU_CHE_ANY" Language="zh_Hant_HK">
+			<Text>汝之智非常人能及。</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_PHANTA_LIU_CHE_ANY" Language="zh_Hant_HK">
+			<Text>朕高估汝觀時勢之能。</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_PHANTA_LIU_CHE_ANY" Language="zh_Hant_HK">
+			<Text>朕尋盟邦共抗賊寇，保邊民平安。汝可識得此機？</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_KUDO_EXIT_LEADER_PHANTA_LIU_CHE_ANY" Language="zh_Hant_HK">
+			<Text>蠻寇如蟊賊，當除之而後快。汝之果決甚合朕意。</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_WARNING_EXIT_LEADER_PHANTA_LIU_CHE_ANY" Language="zh_Hant_HK">
+			<Text>天賜神駿，乃為賢君故，豈容夷狄褻瀆。</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_PHANTA_LIU_CHE_HAPPY" Language="zh_Hant_HK">
+			<Text>大漢風光美不勝收，四方皆知。惟汝部曲臨邊過度，不若退後遠觀，方能盡興。</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_PHANTA_LIU_CHE_UNHAPPY" Language="zh_Hant_HK">
+			<Text>戍衛已燃狼燧，示警汝部臨邊。速速退去，然則朕將遣諸將退之。</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_AI_RESPONSE_POSITIVE_LEADER_PHANTA_LIU_CHE_HAPPY" Language="zh_Hant_HK">
+			<Text>商旅護衛無有惡意，惟容貌可怖耳。善，朕將令其遠離汝境。</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_AI_RESPONSE_POSITIVE_LEADER_PHANTA_LIU_CHE_UNHAPPY" Language="zh_Hant_HK">
+			<Text>可。權宜耳。</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_AI_RESPONSE_NEGATIVE_LEADER_PHANTA_LIU_CHE_ANY" Language="zh_Hant_HK">
+			<Text>汝之警慎出朕所料。惟戰而已！</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_WARNING_DONT_SETTLE_NEAR_ME_AI_LEADER_PHANTA_LIU_CHE_HAPPY" Language="zh_Hant_HK">
+			<Text>此土是為屯田。汝當守禮。</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_WARNING_DONT_SETTLE_NEAR_ME_AI_LEADER_PHANTA_LIU_CHE_UNHAPPY" Language="zh_Hant_HK">
+			<Text>此土是為屯田。勿謂言之不預也。</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_WARNING_DONT_SETTLE_NEAR_ME_AI_RESPONSE_POSITIVE_LEADER_PHANTA_LIU_CHE_HAPPY" Language="zh_Hant_HK">
+			<Text>善。大漢子民有尋良田之能。</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_WARNING_DONT_SETTLE_NEAR_ME_AI_RESPONSE_POSITIVE_LEADER_PHANTA_LIU_CHE_UNHAPPY" Language="zh_Hant_HK">
+			<Text>可。權宜耳。</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_WARNING_DONT_SETTLE_NEAR_ME_AI_RESPONSE_NEGATIVE_LEADER_PHANTA_LIU_CHE_HAPPY" Language="zh_Hant_HK">
+			<Text>溥天之下，莫非王土。汝言有小理，唯屯田大計不容有誤。</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_WARNING_DONT_SETTLE_NEAR_ME_AI_RESPONSE_NEGATIVE_LEADER_PHANTA_LIU_CHE_UNHAPPY" Language="zh_Hant_HK">
+			<Text>溥天之下，莫非王土。屯田大計，不容妄議。</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_PHANTA_LIU_CHE_HAPPY" Language="zh_Hant_HK">
+			<Text>此議深合朕意。</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_PHANTA_LIU_CHE_UNHAPPY" Language="zh_Hant_HK">
+			<Text>但為百姓故，可。</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_PHANTA_LIU_CHE_HAPPY" Language="zh_Hant_HK">
+			<Text>商議之要，乃考慮彼我之利。</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_PHANTA_LIU_CHE_UNHAPPY" Language="zh_Hant_HK">
+			<Text>汝為弄臣耶？</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_PHANTA_LIU_CHE_ANY" Language="zh_Hant_HK">
+			<Text>又見蠻夷不知大漢威光，可歎。</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_PHANTA_LIU_CHE_ANY" Language="zh_Hant_HK">
+			<Text>汝為蠻夷，貪而好利，人面獸心。（譴責你）</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_PHANTA_LIU_CHE_ANY" Language="zh_Hant_HK">
+			<Text>敢犯強漢？北闕又懸一頭矣。</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_PHANTA_LIU_CHE_ANY" Language="zh_Hant_HK">
+			<Text>汝當強漢之轍，不亡何待！</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_MAKE_PEACE_AI_ACCEPT_DEAL_LEADER_PHANTA_LIU_CHE_ANY" Language="zh_Hant_HK">
+			<Text>善，民可生息矣。</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_MAKE_PEACE_AI_REFUSE_DEAL_LEADER_PHANTA_LIU_CHE_ANY" Language="zh_Hant_HK">
+			<Text>弗成。寇可戰，朕何尚不可！</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_MAKE_PEACE_FROM_AI_LEADER_PHANTA_LIU_CHE_ANY" Language="zh_Hant_HK">
+			<Text>此戰擾勞天下，非所以優民。何不化干戈為玉帛？</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_PHANTA_LIU_CHE_ANY" Language="zh_Hant_HK">
+			<Text>天下功罪，在朕一身！百姓，與此無尤。</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_DEFEAT_FROM_HUMAN_LEADER_PHANTA_LIU_CHE_ANY" Language="zh_Hant_HK">
+			<Text>[LOC_DIPLO_DEFEAT_FROM_AI_LEADER_PHANTA_LIU_CHE_ANY]</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_PHANTA_LIU_CHE_TITLE" Language="zh_Hant_HK">
+			<Text>劉徹</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_PHANTA_LIU_CHE_SUBTITLE" Language="zh_Hant_HK">
+			<Text>漢朝皇帝</Text>
+		</Row>
+		<Row Tag="LOC_LEADER_PHANTA_LIU_CHE_QUOTE" Language="zh_Hant_HK">
+			<Text>馬或奔踶而致千里，士或有負俗之累而立功名。夫泛駕之馬，跅弛之士，亦在御之而已。</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_PHANTA_LIU_CHE_CHAPTER_CAPSULE_BODY" Language="zh_Hant_HK">
+			<Text>劉徹尋求以貿易拓寬影響力，並以武力掃平路上一切阻礙。</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_PHANTA_LIU_CHE_CHAPTER_DETAILED_BODY" Language="zh_Hant_HK">
+			<Text>在遊戲早期，訓練建造者並用其次數加速遠古和古典奇觀；同時派出博望侯，憑藉出色的戰鬥力和視野尋找城邦、其他文明和資源豐富的土地。每座您控制的原始 [ICON_Capital] 首都提供+1影響力點數，幫助您獲得使者並經營城邦關係。您的陸上單位在祖國領土外作戰時+5 [ICON_Strength] 戰鬥力，讓您能夠保護自己的利益或擊潰對手。征服外國的 [ICON_Capital] 首都可讓您獲得更多原始首都，進一步提高影響力點數，並維持更強大的軍隊。當奇觀建設、外交與軍事力量相互促進，劉徹的霸權將無可動搖。</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_PHANTA_LIU_CHE_CHAPTER_HISTORY_PARA_1" Language="zh_Hant_HK">
+			<Text>漢族，中國(和世界)的最大民族，得名于富強的漢朝；而漢朝的富強則經常被歸結于西漢第七任皇帝，漢武帝劉徹的統治。在劉徹的帶領下，帝國的疆土大幅擴闊，東至朝鮮半島，西至費爾干納盆地，而中華文明對周邊的影響更甚。</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_PHANTA_LIU_CHE_CHAPTER_HISTORY_PARA_2" Language="zh_Hant_HK">
+			<Text>在西元前141年，劉徹作為漢景帝第11個兒子，帶著吉祥的預兆出生，在沒那麼幸運的兄弟間成長。劉徹取代失寵被廢的長兄成為皇太子，在幾年後以弱冠之年登基。</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_PHANTA_LIU_CHE_CHAPTER_HISTORY_PARA_3" Language="zh_Hant_HK">
+			<Text>在那個時代，有封土的領主忠誠有限，並發生過多次叛亂。禍不單行，帝國的領土受到遊牧掠奪部落匈奴的威脅。先前的漢朝皇帝只能通過定期送禮與和親維持搖曳不定的和平，並專注於經濟復蘇。新登基的皇帝則不滿於維持這種恥辱的僵持局面。繼承父祖輩積累的巨額財富，劉徹希望改變局面——徹頭徹尾地改變。</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_PHANTA_LIU_CHE_CHAPTER_HISTORY_PARA_4" Language="zh_Hant_HK">
+			<Text>劉徹尋求鞏固權力，招用有才能的平民，並鼓勵各地諸侯「推恩」，讓嫡長子以外的兒子能夠分得封地。當時不是所有人都能夠明白皇帝的用意：通過分割領地，皇帝不費兵戈就弱化了各地諸侯的單獨力量。更甚者，劉徹下令罷黜百家，獨尊儒術。儒家的忠孝概念鞏固了社會穩定——也鞏固了中央皇權。除此之外，劉徹推行了一系列的經濟改革，讓國家經濟力量為他所用。</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_PHANTA_LIU_CHE_CHAPTER_HISTORY_PARA_5" Language="zh_Hant_HK">
+			<Text>林林總總的內政改革沒有讓劉徹忽略塞外。在馬邑埋伏匈奴騎兵的計謀失敗前後，皇帝下令發動遠征深入草原。張騫和蘇武等的漢使受命收集匈奴情報，並聯絡其他草原民族結盟。「飛將軍」李廣、衛青和霍去病等漢將率領精兵驅逐匈奴，戰果碩碩，乃至「封狼居胥(在匈奴聖山祭天慶祝勝利)」。開疆拓土的勢頭一時無兩，在大漢軍隊前，許多其他王國或亡國或臣服。</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_PHANTA_LIU_CHE_CHAPTER_HISTORY_PARA_6" Language="zh_Hant_HK">
+			<Text>劉徹下令在征服所得的土地上建立據點，並鼓勵軍民到此屯田，確保這片土地富饒而安全。得知掠奪已經式微，來自中國和週邊國家的商人紛紛湧至這片土地進行貿易，即後世的絲綢之路，連接東西的橋樑，絲綢、瓷器、茶葉和創新思想的交匯紐帶。</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_PHANTA_LIU_CHE_CHAPTER_HISTORY_PARA_7" Language="zh_Hant_HK">
+			<Text>縱使志在千里，老驥終須伏櫪。劉徹的遠見卓識逐漸受傲慢、迷信和老齡蒙蔽，並犯下許多錯誤。他虛耗民力財力建設宮闕，並迫害直言之士(這使得太史司馬遷受到宮刑)。最終，他誤信皇太子施展巫術和起兵叛亂，最終導致後者自盡。劉徹在晚年反思連年征伐和惡政過失，並發佈罪己詔(他是第一個這樣做的皇帝)，盡力讓國家經濟重回正軌。皇帝在西元前87年駕崩，遺下一個疆域擴張將近一倍的帝國，一套沿用千秋萬代的政治哲學，和一個不再畏懼塞外威脅的民族。</Text>
+		</Row>
+		<Row Tag="LOC_ABILITY_PHANTA_LIU_CHE_BONUS_STRENGTH_NAME" Language="zh_Hant_HK">
+			<Text>絲路征途</Text>
+		</Row>
+		<Row Tag="LOC_ABILITY_PHANTA_LIU_CHE_BONUS_STRENGTH_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>在祖國領土外戰鬥時+5 [ICON_Strength] 戰鬥力。（絲路征途）</Text>
+		</Row>
+		<Row Tag="LOC_MODFEAT_PHANTA_LIU_CHE_BONUS_STRENGTH_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>+5 [ICON_Strength] 戰鬥力，在祖國領土外戰鬥（絲路征途）</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_PHANTA_MARQUIS_OF_BOWANG_NAME" Language="zh_Hant_HK">
+			<Text>博望侯</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_PHANTA_MARQUIS_OF_BOWANG_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>劉徹作領袖時，替代偵察兵的遠古時代中國特色單位。擁有更高戰鬥力和更廣闊視野。</Text>
+		</Row>
+		<Row Tag="LOC_ABILITY_PHANTA_MARQUIS_OF_BOWANG_SIGHT_NAME" Language="zh_Hant_HK">
+			<Text>+2視野。</Text>
+		</Row>
+		<Row Tag="LOC_ABILITY_PHANTA_MARQUIS_OF_BOWANG_SIGHT_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>+2視野。</Text>
+		</Row>
+		<Row Tag="LOC_ABILITY_PHANTA_MARQUIS_OF_BOWANG_CREATES_ROADS_NAME" Language="zh_Hant_HK">
+			<Text>卓越機動性</Text>
+		</Row>
+		<Row Tag="LOC_ABILITY_PHANTA_MARQUIS_OF_BOWANG_CREATES_ROADS_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>博望侯擁有出色的機動性。</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PHANTA_MARQUIS_OF_BOWANG_CHAPTER_HISTORY_PARA_1" Language="zh_Hant_HK">
+			<Text>在漢匈戰爭的時期，大漢帝國的使節不止是外交官。他們需要出色的野外求生能力和運氣，免得被匈奴掠奪者俘虜，永遠消失于塞外荒野。第一個完成通使任務的官員是張騫。在兩次被俘又兩次逃脫後，他帶著寶貴的情報回歸長安，其中包括關於草原、匈奴和許多其他中亞國家的第一手資料。劉徹封張騫為太中大夫，並在後來封張騫為博望侯（“博望”取“廣博瞻望”之意）。張騫被視為東西外交及商貿交流的拓路先驅，以致後來的漢朝使者都稱為“博望”，以取信於外國。</Text>
+		</Row>
+	</LocalizedText>
+</GameData>

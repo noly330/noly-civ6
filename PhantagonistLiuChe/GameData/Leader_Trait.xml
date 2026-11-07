@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- +++++++++++++++ Leader traits, InGame +++++++++++++++ -->
+<GameInfo>
+	<!-- +++++++++++++++ Wonder construction and builder charges +++++++++++++++ -->
+	<TraitModifiers>
+		<Row>
+			<TraitType>TRAIT_LEADER_PHANTA_LIU_CHE</TraitType>
+			<ModifierId>MODFEAT_PHANTA_LIU_CHE_ADJUST_BUILDER_CHARGES</ModifierId>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_LEADER_PHANTA_LIU_CHE</TraitType>
+			<ModifierId>MODFEAT_PHANTA_LIU_CHE_ADJUST_WONDER_PERCENT</ModifierId>
+		</Row>
+	</TraitModifiers>
+	<Modifiers>
+		<Row>
+			<ModifierId>MODFEAT_PHANTA_LIU_CHE_ADJUST_BUILDER_CHARGES</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNITS_ADJUST_BUILDER_CHARGES</ModifierType>
+			<SubjectRequirementSetId>UNIT_IS_BUILDER</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MODFEAT_PHANTA_LIU_CHE_ADJUST_WONDER_PERCENT</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_UNIT_WONDER_PERCENT</ModifierType>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<Row>
+			<ModifierId>MODFEAT_PHANTA_LIU_CHE_ADJUST_BUILDER_CHARGES</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>MODFEAT_PHANTA_LIU_CHE_ADJUST_WONDER_PERCENT</ModifierId>
+			<Name>Amount</Name>
+			<Value>10</Value>
+		</Row>
+	</ModifierArguments>
+	<!-- =============== RequirementSets =============== -->
+	<RequirementSets>
+		<Row>
+			<RequirementSetId>REQSET_PHANTA_LIU_CHE_CITY_IS_ORIGINAL_CAPITAL</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+	</RequirementSets>
+	<RequirementSetRequirements>
+		<Row>
+			<RequirementSetId>REQSET_PHANTA_LIU_CHE_CITY_IS_ORIGINAL_CAPITAL</RequirementSetId>
+			<RequirementId>REQ_PHANTA_LIU_CHE_CITY_IS_ORIGINAL_CAPITAL</RequirementId>
+		</Row>
+	</RequirementSetRequirements>
+	<!-- +++++++++++++++ Requirements +++++++++++++++ -->
+	<Requirements>
+		<Row>
+			<RequirementId>REQ_PHANTA_LIU_CHE_CITY_IS_ORIGINAL_CAPITAL</RequirementId>
+			<RequirementType>REQUIREMENT_CITY_IS_ORIGINAL_CAPITAL</RequirementType>
+		</Row>
+	</Requirements>
+	<!-- +++++++++++++++ Second Effect +++++++++++++++ -->
+	<TraitModifiers>
+		<Row>
+			<TraitType>TRAIT_LEADER_PHANTA_LIU_CHE</TraitType>
+			<ModifierId>MODFEAT_PHANTA_LIU_CHE_ADD_INFLUENCE_TO_CAPITALS</ModifierId>
+		</Row>
+	</TraitModifiers>
+	<Modifiers>
+		<Row>
+			<ModifierId>MODFEAT_PHANTA_LIU_CHE_ADD_INFLUENCE_TO_CAPITALS</ModifierId>
+			<ModifierType>MODIFIER_PHANTA_LIU_CHE_ADD_INFLUENCE_TO_CAPITALS</ModifierType>
+			<SubjectRequirementSetId>REQSET_PHANTA_LIU_CHE_CITY_IS_ORIGINAL_CAPITAL</SubjectRequirementSetId>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<Row>
+			<ModifierId>MODFEAT_PHANTA_LIU_CHE_ADD_INFLUENCE_TO_CAPITALS</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+	</ModifierArguments>
+	<!-- *************** Custom ModifierType *************** -->
+	<Types>
+		<Row Kind="KIND_MODIFIER" Type="MODIFIER_PHANTA_LIU_CHE_ADD_INFLUENCE_TO_CAPITALS"/>
+	</Types>
+	<DynamicModifiers>
+		<Row>
+			<ModifierType>MODIFIER_PHANTA_LIU_CHE_ADD_INFLUENCE_TO_CAPITALS</ModifierType>
+			<CollectionType>COLLECTION_PLAYER_CITIES</CollectionType>
+			<EffectType>EFFECT_ADJUST_INFLUENCE_POINTS_PER_TURN</EffectType>
+		</Row>
+	</DynamicModifiers>
+	<!-- +++++++++++++++ Third Effect +++++++++++++++ -->
+	<!-- +++++++++++++++ Define ability +++++++++++++++ -->
+	<Types>
+		<Row Type="ABILITY_PHANTA_LIU_CHE_BONUS_STRENGTH" Kind="KIND_ABILITY"/>
+	</Types>
+	<TypeTags>
+		<Row Type="ABILITY_PHANTA_LIU_CHE_BONUS_STRENGTH" Tag="CLASS_RECON"/>
+		<Row Type="ABILITY_PHANTA_LIU_CHE_BONUS_STRENGTH" Tag="CLASS_MELEE"/>
+		<Row Type="ABILITY_PHANTA_LIU_CHE_BONUS_STRENGTH" Tag="CLASS_RANGED"/>
+		<Row Type="ABILITY_PHANTA_LIU_CHE_BONUS_STRENGTH" Tag="CLASS_SIEGE"/>
+		<Row Type="ABILITY_PHANTA_LIU_CHE_BONUS_STRENGTH" Tag="CLASS_HEAVY_CAVALRY"/>
+		<Row Type="ABILITY_PHANTA_LIU_CHE_BONUS_STRENGTH" Tag="CLASS_LIGHT_CAVALRY"/>
+		<Row Type="ABILITY_PHANTA_LIU_CHE_BONUS_STRENGTH" Tag="CLASS_RANGED_CAVALRY"/>
+		<Row Type="ABILITY_PHANTA_LIU_CHE_BONUS_STRENGTH" Tag="CLASS_ANTI_CAVALRY"/>
+		<Row Type="ABILITY_PHANTA_LIU_CHE_BONUS_STRENGTH" Tag="CLASS_HEAVY_CHARIOT"/>
+		<Row Type="ABILITY_PHANTA_LIU_CHE_BONUS_STRENGTH" Tag="CLASS_LIGHT_CHARIOT"/>
+		<Row Type="ABILITY_PHANTA_LIU_CHE_BONUS_STRENGTH" Tag="CLASS_WARRIOR_MONK"/>
+	</TypeTags>
+	<UnitAbilities>
+		<Row UnitAbilityType="ABILITY_PHANTA_LIU_CHE_BONUS_STRENGTH" Name="LOC_ABILITY_PHANTA_LIU_CHE_BONUS_STRENGTH_NAME" Description="LOC_ABILITY_PHANTA_LIU_CHE_BONUS_STRENGTH_DESCRIPTION" Inactive="true"/>
+	</UnitAbilities>
+	<!-- +++++++++++++++ Define modifiers and requirements of the ability +++++++++++++++ -->
+	<UnitAbilityModifiers>
+		<Row>
+			<UnitAbilityType>ABILITY_PHANTA_LIU_CHE_BONUS_STRENGTH</UnitAbilityType>
+			<ModifierId>MODFEAT_PHANTA_LIU_CHE_BONUS_STRENGTH</ModifierId>
+		</Row>
+	</UnitAbilityModifiers>
+	<Modifiers>
+		<Row>
+			<ModifierId>MODFEAT_PHANTA_LIU_CHE_BONUS_STRENGTH</ModifierId>
+			<ModifierType>MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH</ModifierType>
+			<SubjectRequirementSetId>REQSET_PHANTA_LIU_CHE_FOREIGN_LAND_TERRITORY</SubjectRequirementSetId>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<Row>
+			<ModifierId>MODFEAT_PHANTA_LIU_CHE_BONUS_STRENGTH</ModifierId>
+			<Name>Amount</Name>
+			<Value>5</Value>
+		</Row>
+	</ModifierArguments>
+	<!-- =============== RequirementSets =============== -->
+	<RequirementSets>
+		<Row>
+			<RequirementSetId>REQSET_PHANTA_LIU_CHE_FOREIGN_LAND_TERRITORY</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+	</RequirementSets>
+	<RequirementSetRequirements>
+		<Row>
+			<RequirementSetId>REQSET_PHANTA_LIU_CHE_FOREIGN_LAND_TERRITORY</RequirementSetId>
+			<RequirementId>REQ_PHANTA_LIU_CHE_PLOT_IS_LAND</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>REQSET_PHANTA_LIU_CHE_FOREIGN_LAND_TERRITORY</RequirementSetId>
+			<RequirementId>REQ_PHANTA_PLOT_IS_FOREIGN_TERRITORY</RequirementId>
+		</Row>
+	</RequirementSetRequirements>
+	<!-- +++++++++++++++ Requirements +++++++++++++++ -->
+	<Requirements>
+		<Row>
+			<RequirementId>REQ_PHANTA_LIU_CHE_PLOT_IS_LAND</RequirementId>
+			<RequirementType>REQUIREMENT_PLOT_TERRAIN_CLASS_MATCHES</RequirementType>
+			<Inverse>true</Inverse>
+		</Row>
+		<Row>
+			<RequirementId>REQ_PHANTA_PLOT_IS_FOREIGN_TERRITORY</RequirementId>
+			<RequirementType>REQUIREMENT_UNIT_IN_OWNER_TERRITORY</RequirementType>
+			<Inverse>true</Inverse>
+		</Row>
+	</Requirements>
+	<RequirementArguments>
+		<Row>
+			<RequirementId>REQ_PHANTA_LIU_CHE_PLOT_IS_LAND</RequirementId>
+			<Name>TerrainClass</Name>
+			<Value>TERRAIN_CLASS_WATER</Value>
+		</Row>
+	</RequirementArguments>
+	<!-- +++++++++++++++ Grant abilities +++++++++++++++ -->
+	<TraitModifiers>
+		<Row TraitType="TRAIT_LEADER_PHANTA_LIU_CHE" ModifierId="PHANTA_LIU_CHE_GRANT_ABILITY"/>
+	</TraitModifiers>
+	<Modifiers>
+		<Row>
+			<ModifierId>PHANTA_LIU_CHE_GRANT_ABILITY</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNITS_GRANT_ABILITY</ModifierType>
+			<Permanent>true</Permanent>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<Row>
+			<ModifierId>PHANTA_LIU_CHE_GRANT_ABILITY</ModifierId>
+			<Name>AbilityType</Name>
+			<Value>ABILITY_PHANTA_LIU_CHE_BONUS_STRENGTH</Value>
+		</Row>
+	</ModifierArguments>
+	<!-- +++++++++++++++ Preview Text of abilities +++++++++++++++ -->
+	<ModifierStrings>
+		<Row ModifierId="MODFEAT_PHANTA_LIU_CHE_BONUS_STRENGTH" Context="Preview" Text="LOC_MODFEAT_PHANTA_LIU_CHE_BONUS_STRENGTH_DESCRIPTION"/>
+	</ModifierStrings>
+</GameInfo>

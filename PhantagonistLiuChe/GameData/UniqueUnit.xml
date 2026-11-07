@@ -1,0 +1,41 @@
+<GameData>
+	<Types>
+		<Row Type="UNIT_PHANTA_MARQUIS_OF_BOWANG" Kind="KIND_UNIT"/>
+	</Types>
+	<Tags>
+		<Row Tag="CLASS_PHANTA_MARQUIS_OF_BOWANG" Vocabulary="ABILITY_CLASS"/>
+	</Tags>
+	<UnitAiInfos>
+		<Row UnitType="UNIT_PHANTA_MARQUIS_OF_BOWANG" AiType="UNITAI_EXPLORE"/>
+		<Row UnitType="UNIT_PHANTA_MARQUIS_OF_BOWANG" AiType="UNITTYPE_LAND_COMBAT"/>
+	</UnitAiInfos>
+	<TypeTags>
+		<Row Type="UNIT_PHANTA_MARQUIS_OF_BOWANG" Tag="CLASS_RECON"/>
+		<Row Type="UNIT_PHANTA_MARQUIS_OF_BOWANG" Tag="CLASS_PHANTA_MARQUIS_OF_BOWANG"/>
+	</TypeTags>
+	<UnitUpgrades>
+		<Row Unit="UNIT_PHANTA_MARQUIS_OF_BOWANG" UpgradeUnit="UNIT_SKIRMISHER"/>
+	</UnitUpgrades>
+	<UnitReplaces>
+		<Row CivUniqueUnitType="UNIT_PHANTA_MARQUIS_OF_BOWANG" ReplacesUnitType="UNIT_SCOUT"/>
+	</UnitReplaces>
+	<Units>
+		<Row UnitType="UNIT_PHANTA_MARQUIS_OF_BOWANG" TraitType="TRAIT_LEADER_UNIT_PHANTA_MARQUIS_OF_BOWANG" PurchaseYield="YIELD_GOLD" Domain="DOMAIN_LAND" BaseSightRange="4" Combat="15" AdvisorType="ADVISOR_CONQUEST" BaseMoves="3" FormationClass="FORMATION_CLASS_LAND_COMBAT" ZoneOfControl="1" Name="LOC_UNIT_PHANTA_MARQUIS_OF_BOWANG_NAME" Description="LOC_UNIT_PHANTA_MARQUIS_OF_BOWANG_DESCRIPTION" PromotionClass="PROMOTION_CLASS_RECON" Cost="35"/>
+	</Units>
+	<MomentIllustrations>
+		<Row MomentIllustrationType="MOMENT_ILLUSTRATION_UNIQUE_UNIT" MomentDataType="MOMENT_DATA_UNIT" GameDataType="UNIT_PHANTA_MARQUIS_OF_BOWANG" Texture="Moment_UniqueUnit_UNIT_PHANTA_MARQUIS_OF_BOWANG.dds"/>	
+	</MomentIllustrations>
+	<Types>
+		<Row Type="ABILITY_PHANTA_MARQUIS_OF_BOWANG_SIGHT" Kind="KIND_ABILITY"/>
+		<Row Type="ABILITY_PHANTA_MARQUIS_OF_BOWANG_CREATES_ROADS" Kind="KIND_ABILITY"/>
+	</Types>
+	<TypeTags>
+		<!--Text-Only, but ability modifiers can be added.-->
+		<Row Type="ABILITY_PHANTA_MARQUIS_OF_BOWANG_SIGHT" Tag="CLASS_PHANTA_MARQUIS_OF_BOWANG"/>
+	</TypeTags>
+	<UnitAbilities>
+		<!--Text-Only Abilites-->
+		<Row UnitAbilityType="ABILITY_PHANTA_MARQUIS_OF_BOWANG_SIGHT" Name="LOC_ABILITY_PHANTA_MARQUIS_OF_BOWANG_SIGHT_NAME" Description="LOC_ABILITY_PHANTA_MARQUIS_OF_BOWANG_SIGHT_DESCRIPTION"/>
+		<Row UnitAbilityType="ABILITY_PHANTA_MARQUIS_OF_BOWANG_CREATES_ROADS" Name="LOC_ABILITY_PHANTA_MARQUIS_OF_BOWANG_CREATES_ROADS_NAME" Description="LOC_ABILITY_PHANTA_MARQUIS_OF_BOWANG_CREATES_ROADS_DESCRIPTION"/>
+	</UnitAbilities>
+</GameData>

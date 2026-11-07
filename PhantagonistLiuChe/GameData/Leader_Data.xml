@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Define leader data, InGame -->
+<!-- I separate the color, trait and agenda to make it clearer which xml or sql affect the data -->
+<GameData>
+	<Types>
+		<Row Type="LEADER_PHANTA_LIU_CHE" Kind="KIND_LEADER"/>
+		<Row Type="TRAIT_AGENDA_PHANTA_LIU_CHE" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_LEADER_PHANTA_LIU_CHE" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_LEADER_UNIT_PHANTA_MARQUIS_OF_BOWANG" Kind="KIND_TRAIT"/>
+	</Types>
+	<Leaders>
+		<Row LeaderType="LEADER_PHANTA_LIU_CHE" Name="LOC_LEADER_PHANTA_LIU_CHE_NAME" InheritFrom="LEADER_DEFAULT" Sex="Male" SceneLayers="4"/>
+	</Leaders>
+	<CivilizationLeaders>
+		<Row CivilizationType="CIVILIZATION_CHINA" LeaderType="LEADER_PHANTA_LIU_CHE" CapitalName="LOC_CITY_NAME_PHANTA_LIU_CHE_CITY_00"/>
+	</CivilizationLeaders>
+	<LeaderQuotes>
+		<Row LeaderType="LEADER_PHANTA_LIU_CHE" Quote="LOC_LEADER_PHANTA_LIU_CHE_QUOTE"/>
+	</LeaderQuotes>
+	<Traits>
+		<Row TraitType="TRAIT_AGENDA_PHANTA_LIU_CHE" Name="LOC_TRAIT_AGENDA_PHANTA_LIU_CHE_NAME" Description="LOC_TRAIT_AGENDA_PHANTA_LIU_CHE_DESCRIPTION"/>
+		<Row TraitType="TRAIT_LEADER_PHANTA_LIU_CHE" Name="LOC_TRAIT_LEADER_PHANTA_LIU_CHE_NAME" Description="LOC_TRAIT_LEADER_PHANTA_LIU_CHE_DESCRIPTION"/>
+		<Row TraitType="TRAIT_LEADER_UNIT_PHANTA_MARQUIS_OF_BOWANG" Name="LOC_UNIT_PHANTA_MARQUIS_OF_BOWANG"/>
+	</Traits>
+	<LeaderTraits>
+		<Row LeaderType="LEADER_PHANTA_LIU_CHE" TraitType="TRAIT_LEADER_PHANTA_LIU_CHE"/>
+		<Row LeaderType="LEADER_PHANTA_LIU_CHE" TraitType="TRAIT_LEADER_UNIT_PHANTA_MARQUIS_OF_BOWANG"/>
+	</LeaderTraits>
+	<Agendas>
+		<Row AgendaType="AGENDA_PHANTA_LIU_CHE" Name="LOC_AGENDA_PHANTA_LIU_CHE_NAME" Description="LOC_AGENDA_PHANTA_LIU_CHE_DESCRIPTION"/>
+	</Agendas>
+	<HistoricalAgendas>
+		<Row LeaderType="LEADER_PHANTA_LIU_CHE" AgendaType="AGENDA_PHANTA_LIU_CHE"/>
+	</HistoricalAgendas>
+	<AgendaTraits>
+		<Row AgendaType="AGENDA_PHANTA_LIU_CHE" TraitType="TRAIT_AGENDA_PHANTA_LIU_CHE"/>
+	</AgendaTraits>
+	<FavoredReligions>
+		<Row LeaderType="LEADER_PHANTA_LIU_CHE" ReligionType="RELIGION_CONFUCIANISM"/>
+	</FavoredReligions>
+	<LoadingInfo>
+		<Row LeaderType="LEADER_PHANTA_LIU_CHE" ForegroundImage="LEADER_PHANTA_LIU_CHE_NEUTRAL.dds" BackgroundImage="LEADER_T_ROOSEVELT_BACKGROUND" PlayDawnOfManAudio="0" LeaderText="LOC_LOADING_INFO_LEADER_PHANTA_LIU_CHE"/>
+	</LoadingInfo>
+	<DiplomacyInfo>
+		<Row Type="LEADER_PHANTA_LIU_CHE" BackgroundImage="LEADER_PHANTA_LIU_CHE_NEW_BG.dds"/>
+	</DiplomacyInfo>
+</GameData>
