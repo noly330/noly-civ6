@@ -14,7 +14,7 @@ This repository contains **NolyWorldMap**, a modified TSL world map for Civiliza
 - Preserved 7676 land, shallow/deep water, resources and TSL as much as possible.
 - Fixed the positions of Kamchatka, Sakhalin, the Kuril Islands, Hokkaido, South America and Ireland.
 - Removed two artificial shallow-water strips in the central Pacific and moved their four sea resources to nearby natural coast.
-- Added a Bering land bridge from Kamchatka to the Asian mainland, a 4×3 Alaska with a 2×2 southern extension, two main islands arranged north/south, and a shallow stepping-stone route with deep water between.
+- Added a Bering land bridge from Kamchatka to the Asian mainland, a 4×3 Alaska with a 2×2 southern extension, a blue island kept in place, a red island moved one row south of the blue island, and a shallow stepping-stone route with deep water between.
 
 ## Usage
 
