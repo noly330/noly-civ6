@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="baf5fe5e-9e37-4996-b48a-d6017c42b3a2" version="1">
+  <Properties>
+    <Name>noly的世界地图</Name>
+    <Description>基于 7676 世界地图制作：陆地一格不改，海洋整体加宽。</Description>
+    <Teaser>noly's World Map</Teaser>
+    <Authors>noly</Authors>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+    <EnabledByDefault>1</EnabledByDefault>
+  </Properties>
+  <Dependencies>
+    <Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Expansion: Gathering Storm" />
+  </Dependencies>
+  <FrontEndActions>
+    <AddWorldBuilderMap id="NOLYWORLDMAP">
+      <Properties>
+        <Name>noly的世界地图</Name>
+        <Description>noly's World Map (based on 7676, wider oceans)</Description>
+        <Group>Maps:Expansion2Maps</Group>
+      </Properties>
+      <File>Maps/NolyWorld.Civ6Map</File>
+    </AddWorldBuilderMap>
+  </FrontEndActions>
+  <InGameActions>
+    <UpdateDatabase id="NolyWorldMapData">
+      <File>Maps.xml</File>
+    </UpdateDatabase>
+  </InGameActions>
+  <Files>
+    <File>Maps.xml</File>
+    <File>Maps/NolyWorld.Civ6Map</File>
+  </Files>
+</Mod>
