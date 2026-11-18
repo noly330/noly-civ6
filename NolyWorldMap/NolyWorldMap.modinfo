@@ -25,13 +25,9 @@
     <UpdateDatabase id="NolyWorldMapData">
       <File>Maps.xml</File>
     </UpdateDatabase>
-    <AddGameplayScripts id="NolyForceTSL">
-      <File>ForceTSL.lua</File>
-    </AddGameplayScripts>
   </InGameActions>
   <Files>
     <File>Maps.xml</File>
     <File>Maps/NolyWorld.Civ6Map</File>
-    <File>ForceTSL.lua</File>
   </Files>
 </Mod>

@@ -83,25 +83,6 @@ A Civilization VI TSL world map based on **7676World**, with a wider Pacific, a 
 
 > 旧存档保存的是旧地图数据，不会自动更新；每次更新地图后都必须新开一局。
 
-## 在出生点建都 / Force TSL Capitals
-
-`NolyWorldMap/ForceTSL.lua` 会在**新游戏第一回合**，让 AI 文明/城邦在自己的出生点直接建都（消耗初始 Settler），避免 AI 先跑几格再建城。
-
-默认模式：`AI`（AI 文明 + 城邦；玩家自己不受影响）。
-
-想修改模式，打开 `NolyWorldMap/ForceTSL.lua` 顶部：
-
-```lua
-local FORCE_TSL_MODE = "AI" -- "AI" / "CS" / "ALL" / "OFF"
-```
-
-- `AI`：AI 文明 + 城邦（默认）
-- `CS`：只强制城邦
-- `ALL`：包括玩家自己（玩家也会直接在出生点建都，不再有初始 Settler）
-- `OFF`：关闭
-
-只对 **166×82** 的 noly 地图生效；旧存档不会触发，必须新开一局。
-
 ## 文件结构 / Repository layout
 
 ```
@@ -113,7 +94,6 @@ noly-civ6/
 ├─ NolyWorldMap/
 │  ├─ NolyWorldMap.modinfo
 │  ├─ Maps.xml
-│  ├─ ForceTSL.lua
 │  └─ Maps/
 │     └─ NolyWorld.Civ6Map
 └─ PhantagonistLiuChe/
@@ -132,7 +112,7 @@ noly-civ6/
 - 2026-11-07：白令海 v3：两岛一上一下、浅水围绕岛屿/踏脚路径、其余恢复深水；阿拉斯加向南延伸 2×2。
 - 2026-11-07：白令海 v4：蓝色岛不动，红色岛向下平移到蓝色岛南侧一格，浅水/深水按新位置重算。
 - 2026-11-07：仓库改名 **noly-civ6**，加入 **Phantagonist's Liu Che（汉武帝）** mod。
-- 2026-11-18：新增 `ForceTSL.lua`，默认让 AI 文明/城邦在出生点直接建都（模式可在文件顶部改）。
+- 2026-11-18：回退 `ForceTSL` 功能，恢复默认开局。
 - 基于 7676World 的 TSL 世界地图修改。
 
 ## 致谢 / Credits
