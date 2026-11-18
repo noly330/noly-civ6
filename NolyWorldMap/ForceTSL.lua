@@ -1,11 +1,15 @@
 -- ============================================================================
--- noly 世界地图：强制在出生点建都
+-- noly 世界地图：让 AI 在出生点直接建都
 -- 模式：
 --   "AI"  = 所有 AI 文明 + 城邦（推荐，默认）
 --   "CS"  = 只强制城邦
---   "ALL" = AI + 城邦 + 玩家自己（玩家也会直接在出生点建都，不再有初始 Settler）
+--   "ALL" = AI + 城邦 + 玩家自己
 --   "OFF" = 关闭
 -- 只对 166×82 的 noly 世界地图生效。
+--
+-- 逻辑：第一回合每个玩家轮到时，如果还没有城市，就在其 StartingPlot
+-- 直接创建首都；建城成功后删除该玩家所有初始 Settler，避免“多一个开拓者”。
+-- 建城失败则完全跳过，让 AI 按正常逻辑处理，避免卡回合。
 -- ============================================================================
 
 local FORCE_TSL_MODE = "AI"
@@ -39,6 +43,22 @@ function NolyCreatePlayerCity(player, x, y)
     end
 end
 
+-- 删除该玩家所有 Settler，避免城市 + 额外开拓者
+function NolyRemoveAllSettlers(player)
+    local settlers = {}
+    for _, unit in player:GetUnits():Members() do
+        if unit:GetType() == GameInfo.Units["UNIT_SETTLER"].Index then
+            table.insert(settlers, unit)
+        end
+    end
+    for _, unit in ipairs(settlers) do
+        pcall(function()
+            player:GetUnits():Destroy(unit)
+        end)
+    end
+    return #settlers
+end
+
 function NolyForceTSL(iPrevPlayer)
 
     -- 只在第一回合执行
@@ -66,20 +86,27 @@ function NolyForceTSL(iPrevPlayer)
     then
         local startingPlot = player:GetStartingPlot()
         if startingPlot and not startingPlot:IsCity() and not startingPlot:IsWater() then
-            local unitsInPlot = Units.GetUnitsInPlot(startingPlot)
-            if unitsInPlot ~= nil then
-                for _, unit in ipairs(unitsInPlot) do
-                    if unit:GetType() == GameInfo.Units["UNIT_SETTLER"].Index then
-                        print("NolyForceTSL: founding city at start plot for player #" .. tostring(iPlayer)
-                            .. " (" .. tostring(startingPlot:GetX()) .. "," .. tostring(startingPlot:GetY()) .. ")")
-                        local city = NolyCreatePlayerCity(player, startingPlot:GetX(), startingPlot:GetY())
-                        if city then
-                            player:GetUnits():Destroy(unit)
-                        else
-                            print("NolyForceTSL: WARNING city creation failed at "
-                                .. tostring(startingPlot:GetX()) .. "," .. tostring(startingPlot:GetY()))
-                        end
-                    end
+            -- Only force if the player actually has an initial settler.
+            -- This avoids creating a free city for a player without a settler.
+            local hasSettler = false
+            for _, unit in player:GetUnits():Members() do
+                if unit:GetType() == GameInfo.Units["UNIT_SETTLER"].Index then
+                    hasSettler = true
+                    break
+                end
+            end
+
+            if hasSettler then
+                local x, y = startingPlot:GetX(), startingPlot:GetY()
+                local ok, city = pcall(NolyCreatePlayerCity, player, x, y)
+                if ok and city then
+                    local removed = NolyRemoveAllSettlers(player)
+                    print("NolyForceTSL: capital founded at " .. tostring(x) .. "," .. tostring(y)
+                        .. " for player #" .. tostring(iPlayer)
+                        .. ", removed " .. tostring(removed) .. " settler(s)")
+                else
+                    print("NolyForceTSL: skipped player #" .. tostring(iPlayer)
+                        .. " (could not create city at " .. tostring(x) .. "," .. tostring(y) .. ")")
                 end
             end
         end
