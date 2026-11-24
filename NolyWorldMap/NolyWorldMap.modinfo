@@ -25,9 +25,13 @@
     <UpdateDatabase id="NolyWorldMapData">
       <File>Maps.xml</File>
     </UpdateDatabase>
+    <AddGameplayScripts id="NolyRepairContinents">
+      <File>RepairContinents.lua</File>
+    </AddGameplayScripts>
   </InGameActions>
   <Files>
     <File>Maps.xml</File>
     <File>Maps/NolyWorld.Civ6Map</File>
+    <File>RepairContinents.lua</File>
   </Files>
 </Mod>

@@ -83,6 +83,14 @@ A Civilization VI TSL world map based on **7676World**, with a wider Pacific, a 
 
 > 旧存档保存的是旧地图数据，不会自动更新；每次更新地图后都必须新开一局。
 
+## 大陆类型修复 / Continent repair
+
+`NolyWorldMap/RepairContinents.lua` 会在载入 **166×82** 存档时校正地块的大陆类型，用于修复之前被误标成亚洲的非洲/欧洲等区域。
+
+- 只修改 `ContinentType`，不动地形、浅水/深水、资源、城市、单位、TSL。
+- 同时修复旧存档和以后新开的游戏；新地图文件本身也已恢复正确大陆。
+- 白令海新增陆地按当前设定归 **亚洲**。
+
 ## 文件结构 / Repository layout
 
 ```
@@ -94,6 +102,7 @@ noly-civ6/
 ├─ NolyWorldMap/
 │  ├─ NolyWorldMap.modinfo
 │  ├─ Maps.xml
+│  ├─ RepairContinents.lua
 │  └─ Maps/
 │     └─ NolyWorld.Civ6Map
 └─ PhantagonistLiuChe/
@@ -113,6 +122,7 @@ noly-civ6/
 - 2026-11-07：白令海 v4：蓝色岛不动，红色岛向下平移到蓝色岛南侧一格，浅水/深水按新位置重算。
 - 2026-11-07：仓库改名 **noly-civ6**，加入 **Phantagonist's Liu Che（汉武帝）** mod。
 - 2026-11-18：回退 `ForceTSL` 功能，恢复默认开局。
+- 2026-11-24：修复大陆类型，恢复非洲/欧洲/亚洲/北美/南美/Oceania；白令海新增陆地归亚洲。
 - 基于 7676World 的 TSL 世界地图修改。
 
 ## 致谢 / Credits
